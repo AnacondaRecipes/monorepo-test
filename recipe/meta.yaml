@@ -17,8 +17,6 @@ requirements:
   host:
     - python
     - pip
-    - agate >=1.5.0
-    - dbfread >=2.0.5
 
   run:
     - python
