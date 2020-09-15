@@ -1,4 +1,4 @@
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 
 package:
   name: agate-dbf
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/a/agate-dbf/agate-dbf-{{ version }}.tar.gz
-  sha256: 00c93c498ec9a04cc587bf63dd7340e67e2541f0df4c9a7259d7cb3dd4ce372f
+  sha256: 589682b78c5c03f2dc8511e6e3edb659fb7336cd118e248896bb0b44c2f1917b
 
 build:
   number: 0
