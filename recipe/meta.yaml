@@ -18,20 +18,28 @@ build:
 requirements:
   host:
     - python
+    - pip
     - setuptools
+    - wheel
   run:
     - python
 
 test:
   imports:
     - aenum
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
-  home: https://bitbucket.org/stoneleaf/aenum
+  home: https://github.com/ethanfurman/aenum
   license: BSD-3-Clause
   license_family: BSD
   license_file: aenum/LICENSE
-  summary: Advanced Enumerations (compatible with Python's stdlib Enum), NamedTuples,
+  summary: Advanced Enumerations (compatible with Python's stdlib Enum), NamedTuples, and NamedConstants
+  dev_url: https://github.com/ethanfurman/aenum
+  doc_url: https://github.com/ethanfurman/aenum/blob/master/aenum/doc/aenum.rst
 
 extra:
   recipe-maintainers:
