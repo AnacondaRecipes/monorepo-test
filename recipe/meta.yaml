@@ -15,17 +15,19 @@ source:
 
 build:
   number: 0
+  noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   host:
     - python
     - pip
+    - wheel
+    - setuptools
     - six
   run:
     - python
     - six
-    - enum34  # [py27]
 
 test:
   imports:
@@ -33,6 +35,10 @@ test:
     - absl.flags
     - absl.logging
     - absl.testing
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://abseil.io/
