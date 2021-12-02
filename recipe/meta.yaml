@@ -15,6 +15,8 @@ source:
 
 build:
   number: 0
+  # the package absl is not available in s390x
+  skip: True  # [py<36 or s390x]
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
