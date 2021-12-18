@@ -1,8 +1,8 @@
 {% set name = "absl-py" %}
-{% set version = "0.13.0" %}
+{% set version = "0.15.0" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "6953272383486044699fd0e9f00aad167a27e08ce19aae66c6c4b10e7e767793" %}
+{% set hash_value = "72d782fbeafba66ba3e525d46bccac949b9a174dbf66233e50ece09ee688dc81" %}
 
 package:
   name: {{ name|lower }}
@@ -15,6 +15,8 @@ source:
 
 build:
   number: 0
+  # the package absl is not available in s390x
+  skip: True  # [py<36 or s390x]
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
