@@ -18,7 +18,6 @@ build:
   # package would be preferred over an old arch-specific package.
   # To get a noarch build for using on other platforms (linux-ppc64le, osx-arm64)
   # we do an extra build on linux that makes a noarch package.
-  noarch: {{ noarch }}
   merge_build_host: false  # [not win]
   # windows build assume one prefix (between e.g. python/gtk3), so use merged host/build
   merge_build_host: true  # [win]
