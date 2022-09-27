@@ -5,7 +5,7 @@ package:
 build:
   # The build number must always be set to 0.
   # Use conda_build_config.yaml to make a new release.
-  number: 0
+  number: 1
   string: {{ go_variant_str }}
 
 test:
@@ -18,6 +18,8 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
+  doc_url: https://github.com/conda-forge/_go_select-feedstock
+  dev_url: https://github.com/conda-forge/_go_select-feedstock
   summary: "The golang select package."
   description: |
     We support three different variants of the golang compiler, 
