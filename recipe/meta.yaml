@@ -5,7 +5,7 @@ package:
 build:
   # The build number must always be set to 0.
   # Use conda_build_config.yaml to make a new release.
-  number: 0
+  number: 1
   string: {{ go_variant_str }}
 
 test:
