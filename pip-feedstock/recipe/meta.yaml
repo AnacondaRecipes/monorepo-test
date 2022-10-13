@@ -18,7 +18,7 @@ source:
   sha256: 3fd1929db052f056d7a998439176d3333fa1b3f6c1ad881de1885c0717608a4b
 
 build:
-  number: 0
+  number: 2
   disable_pip: true
   string: py{{ CONDA_PY }}h{{ PKG_HASH }}_{{ PKG_BUILDNUM }}{{ debug }}
   entry_points:
