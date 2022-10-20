@@ -13,13 +13,15 @@ source:
 
 build:
   number: 0
-  skip: True # [py<36]
+  # The package absl is not available in s390x.
+  skip: True  # [py<36 or s390x]
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   host:
     - python
     - pip
+    - wheel
     - setuptools
   run:
     - python
@@ -30,6 +32,10 @@ test:
     - absl.flags
     - absl.logging
     - absl.testing
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://abseil.io/
