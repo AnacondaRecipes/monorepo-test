@@ -41,7 +41,7 @@ about:
   home: https://abseil.io/
   license: Apache-2.0
   license_family: Apache
-  llicense_file: LICENSE
+  license_file: LICENSE
   summary: |
     This repository is a collection of Python library code for building Python applications. 
     The code is collected from Google's own Python code base,
