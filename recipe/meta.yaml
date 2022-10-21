@@ -39,15 +39,16 @@ test:
 
 about:
   home: https://abseil.io/
-  license: Apache 2.0
+  license: Apache-2.0
   license_family: Apache
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
+  llicense_file: LICENSE
   summary: |
     This repository is a collection of Python library code for building Python applications. 
     The code is collected from Google's own Python code base,
     and has been extensively tested and used in production.
   doc_url: https://abseil.io/docs/python/
   dev_url: https://github.com/abseil/abseil-py
+  doc_source_url: https://github.com/abseil/abseil-py/blob/main/docs/source/
 
 extra:
   recipe-maintainers:
