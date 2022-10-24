@@ -1,5 +1,3 @@
 build_order:
   - blinker-feedstock
   - pip-feedstock
-
-aggregate_check: false
