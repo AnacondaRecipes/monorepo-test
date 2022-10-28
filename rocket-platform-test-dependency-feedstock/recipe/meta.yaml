@@ -1,0 +1,15 @@
+package:
+  name: rocket-platform-test-dependency
+  version: 1.0
+
+source:
+  path: ../src
+
+build:
+  number: 4
+
+about:
+  license_file: LICENSE
+  license: BSD-3-Clause
+  license_family: BSD
+

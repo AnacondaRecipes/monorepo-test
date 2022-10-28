@@ -1,0 +1,21 @@
+package:
+  name: rocket-platform-test-build
+  version: 1.0
+
+source:
+  path: ../src
+
+build:
+  number: 4
+
+requirements:
+  host:
+    - rocket-platform-test-dependency
+  run:
+    - rocket-platform-test-dependency
+
+about:
+  license_file: LICENSE
+  license: BSD-3-Clause
+  license_family: BSD
+
