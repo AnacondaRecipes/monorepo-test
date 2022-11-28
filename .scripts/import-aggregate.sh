@@ -25,5 +25,4 @@ aggregate_dir=$1
         ./.scripts/feedstock.sh pull $feedstock $branch
     fi
 
-    exit
 done
