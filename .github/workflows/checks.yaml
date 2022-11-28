@@ -1,0 +1,17 @@
+name: "Checks"
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main:
+
+jobs:
+  make-checks:
+    runs-on: self-hosted-eks
+    steps:
+      - uses: actions/checkout
+
+      - name: Run make checks
+        run: |
+          make checks

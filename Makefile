@@ -8,5 +8,5 @@ SHELL := /bin/bash -o pipefail -o errexit
 help:
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
 
-check:
+checks:
 	@./.scripts/find-duplicates.sh
