@@ -1,6 +1,6 @@
 name: "Checks"
 
-description: "Runs integrity checks on the monorepo structure."
+# Run integrity checks on the monorepo structure
 
 on:
   pull_request:
