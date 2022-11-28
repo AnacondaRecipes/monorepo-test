@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# find the same feedstock in multiple subdirectories
+
 failed=false
 find . -type d -name "*-feedstock" | grep -v "./.git/*" | while read feedstock_path; do
     feedstock=$(basename $feedstock_path)
