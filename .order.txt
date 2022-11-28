@@ -1,0 +1,2 @@
+rocket-platform-test-dependency-feedstock
+rocket-platform-test-build-feedstock
