@@ -1,2 +1,4 @@
 aggregate_check: false
 
+monorepo: true
+
