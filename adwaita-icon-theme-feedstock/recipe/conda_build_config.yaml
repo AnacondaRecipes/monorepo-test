@@ -1,0 +1,6 @@
+ignore_version:
+  - librsvg
+  - noarch
+noarch:
+  - null
+  - generic  # [linux64]

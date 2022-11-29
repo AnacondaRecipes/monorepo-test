@@ -1,0 +1,13 @@
+channel_sources:
+- conda-forge,defaults
+channel_targets:
+- conda-forge main
+librsvg:
+- '2'
+noarch:
+- 'null'
+pin_run_as_build:
+  librsvg:
+    max_pin: x
+target_platform:
+- win-64
