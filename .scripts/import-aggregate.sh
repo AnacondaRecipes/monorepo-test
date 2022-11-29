@@ -17,11 +17,15 @@ import() {
     fi
 
     branch=$(grep -A3 "submodule \"$feedstock\"" $aggregate_dir/.gitmodules | grep branch | awk '{ print $3 }')
+    url=$(grep -A3 "submodule \"$feedstock\"" $aggregate_dir/.gitmodules | grep url | awk '{ print $3 }')
+    path=$(grep -A3 "submodule \"$feedstock\"" $aggregate_dir/.gitmodules | grep path | awk '{ print $3 }')
+
+    feedstock_path=$(basename $url)
 
     if [[ $num_found -eq 0 ]]; then
-        ./.scripts/feedstock.sh add $feedstock $branch
+        echo ./.scripts/feedstock.sh add $feedstock_path $path $branch
     else
-        ./.scripts/feedstock.sh pull $feedstock $branch
+        echo ./.scripts/feedstock.sh pull $feedstock_path $path $branch
     fi
 }
 

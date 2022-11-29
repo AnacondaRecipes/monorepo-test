@@ -4,6 +4,7 @@ set -euf -o pipefail
 
 command=$1
 feedstock=$2
-branch=${3:-master}
+path=${3:-$feedstock}
+branch=${4:-master}
 
-git subtree $command --prefix $feedstock git@github.com:AnacondaRecipes/$feedstock $branch
+git subtree $command --prefix $path git@github.com:AnacondaRecipes/$feedstock $branch
