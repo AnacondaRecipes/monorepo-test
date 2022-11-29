@@ -1,0 +1,33 @@
+package:
+  name: _go_select
+  version: {{ go_variant_version }}
+
+build:
+  # The build number must always be set to 0.
+  # Use conda_build_config.yaml to make a new release.
+  number: 1
+  string: {{ go_variant_str }}
+
+test:
+  commands:
+    - test ${GOROOT} = ${CONDA_PREFIX}/go  # [unix]
+    - cmd /c if x%GOROOT% NEQ x%CONDA_PREFIX%\go exit 1  # [win]
+
+about:
+  home: https://github.com/conda-forge/_go_select-feedstock
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: LICENSE.txt
+  doc_url: https://github.com/conda-forge/_go_select-feedstock
+  dev_url: https://github.com/conda-forge/_go_select-feedstock
+  summary: "The golang select package."
+  description: |
+    We support three different variants of the golang compiler, 
+    `precompiled`, which is a repackage of the builds available from golang.org;
+    `cgo`, which is compiled from source by conda-forge with CGO_ENABLED=1;
+    `nocgo`, which is compiled from source by conda-forge with CGO_ENABLED=0.
+    In version 1 `conda` will prefer the `go-nocgo` version by default, followed 
+    by `go-cgo` and then `go-precompiled`.
+extra:
+  recipe-maintainers:
+    - conda-forge/go

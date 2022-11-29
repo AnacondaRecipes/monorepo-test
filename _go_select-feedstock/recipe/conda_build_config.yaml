@@ -1,0 +1,13 @@
+go_variant_version:
+  # 1.x nocgo > cgo > precompiled
+  # 2.x cgo > nocgo > precompiled
+  - 2.1.0
+  - 2.2.0
+  - 2.3.0
+go_variant_str:
+  - precompiled  # precompiled/binary repacking
+  - nocgo  # conda-forge compiled with CGO_ENABLED=0
+  - cgo  # conda-forge compiled, with CGO_ENABLED=1
+zip_keys:
+  - go_variant_version
+  - go_variant_str

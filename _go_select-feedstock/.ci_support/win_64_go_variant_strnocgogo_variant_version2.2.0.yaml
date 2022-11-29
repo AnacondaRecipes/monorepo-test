@@ -1,0 +1,13 @@
+channel_sources:
+- conda-forge,defaults
+channel_targets:
+- conda-forge main
+go_variant_str:
+- nocgo
+go_variant_version:
+- 2.2.0
+target_platform:
+- win-64
+zip_keys:
+- - go_variant_version
+  - go_variant_str
