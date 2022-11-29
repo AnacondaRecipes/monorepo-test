@@ -23,9 +23,9 @@ import() {
     feedstock_path=$(basename $url)
 
     if [[ $num_found -eq 0 ]]; then
-        echo ./.scripts/feedstock.sh add $feedstock_path $path $branch
+        ./.scripts/feedstock.sh add $feedstock_path $path $branch
     else
-        echo ./.scripts/feedstock.sh pull $feedstock_path $path $branch
+        ./.scripts/feedstock.sh pull $feedstock_path $path $branch
     fi
 }
 
